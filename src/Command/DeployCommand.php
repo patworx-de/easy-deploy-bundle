@@ -77,6 +77,7 @@ class DeployCommand extends Command
         $deployer = include $this->configFilePath;
         $deployer->initialize($context);
         $deployer->doDeploy();
+        return 0;
     }
 
     private function createDefaultConfigFile(InputInterface $input, OutputInterface $output, string $defaultConfigPath, string $stageName): void
