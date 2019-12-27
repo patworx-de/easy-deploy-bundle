@@ -16,7 +16,7 @@ matrix:
       env:
         - SYMFONY_VERSION="dev-master"
         - CHECK_PHP_SYNTAX="no"
-    - php: 7.1
+    - php: 7.2
       env:
         - SYMFONY_VERSION="3.2.*"
         - CHECK_PHP_SYNTAX="yes"
