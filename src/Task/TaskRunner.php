@@ -43,9 +43,10 @@ class TaskRunner
 
     private function createProcess(string $shellCommand): Process
     {
-        if(method_exists(Process::class, 'fromShellCommandline')) {
+        if (method_exists(Process::class, 'fromShellCommandline')) {
             return Process::fromShellCommandline($shellCommand);
         }
+
         return new Process($shellCommand);
     }
 
